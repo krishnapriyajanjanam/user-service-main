@@ -30,5 +30,13 @@ public class UserServiceImpl implements UserService {
         return user.getName()+" your successfully registered";
     }
 
+    @Override
+    public Users fetchUser(String email) {
+
+        Users outputData = userRepo.usersData(email);
+        return outputData;
+
+    }
+
 
 }
