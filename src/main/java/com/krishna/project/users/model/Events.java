@@ -1,20 +1,32 @@
 package com.krishna.project.users.model;
 
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 
 @Entity
 public class Events {
 
+    @Column(name="eventname")
     private String eventName;
     @Id
+    @Column(name="eventid")
     private int eventId;
     private String venue;
     private String description;
+
+    @Column(name="starttime")
     private String startTime;
+
+    @Column(name="endtime")
     private String endTime;
+
+    @Column(name="eventmanager")
     private String eventManager;
+
+    public Events() {
+    }
 
     public Events(String eventName, int eventId, String venue, String description, String startTime, String endTime, String eventManager) {
         this.eventName = eventName;

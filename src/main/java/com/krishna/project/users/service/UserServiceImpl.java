@@ -2,7 +2,6 @@ package com.krishna.project.users.service;
 
 
 import com.krishna.project.users.model.Users;
-import com.krishna.project.users.model.Users;
 import com.krishna.project.users.repository.UserRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
